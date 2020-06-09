@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  background-color: #555;
+  height: 100vh;
+}
+
+.grid-item {
+  background-color: aqua;
+  /* height: calc(25% - 30px); */
+  background-attachment: fixed;
+}
+
+.bg-light {
+  background-image: url("./assets/bg-light.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #333;
+}
+
+.bg-dark {
+  background-image: url("./assets//bg-dark.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.large {
+  grid-column: span 2;
+}
